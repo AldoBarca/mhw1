@@ -167,11 +167,11 @@ section.section3{
   background-color:rgba(0, 0, 0, .1);
   margin:0px;
   font-family: 'New Tegomin', serif;
+
 }
 @media(max-width:500px){.section3 img{height:150px;
 margin-top:-100px;}
 }
-
 .reparti p{
   display:inline;
   color:black;}
