@@ -1,11 +1,20 @@
 body{
-  
-  margin:.3px;
+ 
+margin:.3px;
 }
 
-  .navbar{
+@media(max-width:500px){body{width:100vw;
+background-color:rgba(0, 0, 0, .1);}
+}
+
+img{
+height:400px;
+width:100%;
+}
+
+
+ .navbar{
   background-color:white;
-    
   display:flex;
   justify-content:space-around;
   align-items: center;
@@ -17,11 +26,11 @@ body{
   color: green;
   border:green solid 2px;
   padding: 4px;
-  border-radius: 20px;
-  position:relative;
-  bottom:0px;
-   
+  border-radius: 20px; 
 }
+
+
+
 .overlay{
   background-color:rgba(0, 0, 0, .3);
   position:absolute;
@@ -29,82 +38,121 @@ body{
   bottom:0px;
   width:100%;
   height:100%;
-  
 }
 
+@media(max-width:500px){.overlay {z-index:1;}}
+
   
 
- nav a{
-color:green;
-cursor:pointer;
+nav a{
+ color:green;
+ cursor:pointer;
  text-decoration:none;
-  z-index:1;
+ z-index:1;
   }
+
 header{
   background-image:url(https://media.istockphoto.com/photos/hospital-bed-corridor-nobody-landscape-format-picture-id1130922204?k=6&m=1130922204&s=612x612&w=0&h=LcPcxOrp4kPuTVJx0u2dcsZwam39pzPEfvnQ83PEFEw=);
-  
-  
   background-position:center;
-   position:relative;
+  position:relative;
   height:450px;
- 
   margin-bottom:2px;
   background-size:cover;
   background-repeat:no-repeat;
-  
-  
 }
+
+@media(max-width:500px){header{height:300px;}}
+
+
+
+
 header h1{
-  font-family: 'Roboto',serif;
-  font-size:60px;
- 
-  text-align:center;
-  color:green;
-  position:relative;
-  top:-30px;
-  
+ font-family: 'Roboto',serif;
+ font-size:60px;
+ text-align:center;
+ color:green;
+ position:relative;
+ top:-30px;
 }
+
+@media(max-width:500px){header h1{font-size:40px;}}
+
+
 section.section1{
-  height:400px;
-  
-  display:flex;
-  background-color:white;
-  justify-content:space-around;
-  align-items:center;
-background-color:rgba(0, 0, 0, .1);
-  
+ height:400px;
+ display:flex;
+ background-color:white;
+ justify-content:space-around;
+ align-items:center;
+ background-color:rgba(0, 0, 0, .1); 
 }
+
+@media(max-width:500px){section.section1{height:250px;
+align-items:flex-start;}}
+
+@media(max-width:500px){.section1 img{
+width:99%;
+height:150px;}
+}
+
+
 section.section2{
   display:flex;
   background-color:white;
   justify-content:space-around;
-  align-items:top;
+  align-items:flex-start;
   height:200px;
   background-color:rgba(0, 0, 0, .1);
   line-height:25px;
+
   
+}
+@media(max-width:500px){.section2{height:150px;
+ align-items:flex-start;
+ margin-top:-100px;
+ background-color:rgba(0, 0, 0, .1);}
 }
 
 
-.paragrafo2 {color:green;
-font-family: 'Ubuntu', sans-serif;
+
+.paragrafo2 {
+  color:green;
+  font-family: 'Ubuntu', sans-serif;
   font-size:25px;
   font-weight:normal;
   font-style: oblique;
   line-height:23px;
+  padding-right:9%;
 }
-.paragrafo1 {color:red;
+
+@media(max-width:500px){.paragrafo2 p{font-size:13px;
+line-height:12px;
+width:90%;}}
+
+.paragrafo1 {
+  color:red;
   font-family: 'Poppins',sans-serif;
   font-size:25px;
   font-style: italic;
   line-height:24px;
-  }
+  padding-left:2%;
+}
+
+@media(max-width:500px){.paragrafo1 p{font-size:13px;
+line-height:12px;
+width:90%;}
+}
+
 a{color:blue;
 cursor:pointer;
  }
 
-img{
-height:400px;}
+a:active{color:darkblue;
+}
+
+
+.section3 img{width:50%;}
+
 
 section.section3{
   text-align:center;
@@ -113,14 +161,20 @@ section.section3{
   margin:0px;
   font-family: 'New Tegomin', serif;
 }
-.reparti p{display:inline;
-color:black;
-  
+@media(max-width:500px){.section3 img{height:150px;
+margin-top:-100px;}
 }
 
+.reparti p{
+  display:inline;
+  color:black;}
 
-p.paragrafo3{margin-bottom:2px;
+
+p.paragrafo3{
+  margin-bottom:2px;
 }
+
+@media(max-width:500px){.reparti a , .reparti p{font-size:12px;}}
 
 footer{
 
@@ -128,9 +182,11 @@ footer{
   margin-top:-20px;
   border:3px solid blue;
   margin-bottom:-2px;
-  
   background-color: red;
   color: white;
   text-align: center;
   font-size:17px;
 }
+
+@media(max-width:500px){footer{font-size:12px;}}
+
