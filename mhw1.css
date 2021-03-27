@@ -77,9 +77,10 @@ header h1{
 
 @media(max-width:500px){header h1{font-size:40px;}}
 
-.img1,.img2{width:50%;
+.img1,.img2{width:45%;
 }
-
+@media(max-width:500px){.img1,.img2{width:50%;
+}}
 section.section1{
  height:400px;
  display:flex;
@@ -141,7 +142,7 @@ width:90%;}}
   font-size:25px;
   font-style: italic;
   line-height:24px;
-  padding-left:2%;
+  padding-right:5%;
 }
 
 @media(max-width:500px){.paragrafo1 p{font-size:13px;
