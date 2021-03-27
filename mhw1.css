@@ -52,7 +52,7 @@ nav a{
   }
 
 header{
-  background-image:url(https://media.istockphoto.com/photos/hospital-bed-corridor-nobody-landscape-format-picture-id1130922204?k=6&m=1130922204&s=612x612&w=0&h=LcPcxOrp4kPuTVJx0u2dcsZwam39pzPEfvnQ83PEFEw=);
+  background-image:url("Foto1.jpg");
   background-position:center;
   position:relative;
   height:450px;
@@ -77,6 +77,8 @@ header h1{
 
 @media(max-width:500px){header h1{font-size:40px;}}
 
+.img1,.img2{width:50%;
+}
 
 section.section1{
  height:400px;
@@ -88,7 +90,9 @@ section.section1{
 }
 
 @media(max-width:500px){section.section1{height:250px;
-align-items:flex-start;}}
+align-items:flex-start;
+
+}}
 
 @media(max-width:500px){.section1 img{
 width:99%;
@@ -107,10 +111,12 @@ section.section2{
 
   
 }
-@media(max-width:500px){.section2{height:150px;
- align-items:flex-start;
- margin-top:-100px;
- background-color:rgba(0, 0, 0, .1);}
+@media(max-width:500px){
+  .section2{height:150px;
+   align-items:flex-start;
+
+   margin-top:-100px;
+   	}
 }
 
 
